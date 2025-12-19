@@ -6,9 +6,10 @@ import {
   Info,
   HelpCircle,
   LogOut,
+  Workflow,
 } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
-import { useEffect } from "react";
+
 
 export default function Sidebar() {
   const { user, logout,loading } = useAuth();
@@ -27,21 +28,21 @@ export default function Sidebar() {
     <aside className="w-64 h-screen bg-slate-900 p-6 flex flex-col">
       {/* User */}
       <div className="mb-8">
-        <p className="text-slate-400 text-sm">Welcome</p>
-        <p className="text-lg font-semibold text-white">{user?.name}</p>
+        <p className="text-slate-400 text-xl">Welcome!!</p>
+        <p className="text-4xl font-semibold text-white">IntervAI</p>
       </div>
 
       {/* Navigation */}
       <nav className="flex flex-col gap-2 flex-1">
-        <NavLink to="/profile" className={linkClass}>
-          <User size={18} /> Profile
-        </NavLink>
         <NavLink to="/" className={linkClass}>
           <Home size={18} /> Dashboard
         </NavLink>
 
         <NavLink to="/upload" className={linkClass}>
           <Upload size={18} /> Upload Resume
+        </NavLink>
+        <NavLink to="/howitworks" className={linkClass}>
+          < Workflow size={18} /> How It Works
         </NavLink>
 
         <NavLink to="/about" className={linkClass}>

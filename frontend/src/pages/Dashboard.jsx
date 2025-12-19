@@ -13,7 +13,7 @@ export default function Dashboard() {
       {/* ================= Greeting ================= */}
       <div className="mb-14">
         <h1 className="text-4xl font-bold tracking-tight">
-          {greeting}, {user?.name} 👋
+          {greeting}
         </h1>
         <p className="text-slate-400 mt-3 max-w-2xl leading-relaxed">
           Welcome to your AI-powered interview preparation platform 🤖  

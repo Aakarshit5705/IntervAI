@@ -9,9 +9,9 @@ import InterviewSummary from "./pages/InterviewSummary";
 
 import ProtectedRoute from "./routes/ProtectedRoute";
 import DashboardLayout from "./layouts/DashboardLayout";
-import Profile from "./pages/Profile";
 import AboutPlatform from "./pages/AboutPlatform";
 import HelpSupport from "./pages/HelpSupport";
+import HowItWorks from "./pages/HowItWorks";
 
 export default function App() {
   return (
@@ -29,7 +29,7 @@ export default function App() {
             <Route path="/upload" element={<UploadResume />} />
             <Route path="/interview/start" element={<Interview />} />
             <Route path="/interview/summary" element={<InterviewSummary />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/howitworks" element={<HowItWorks />} />
             <Route path="/about" element={<AboutPlatform/>} />
             <Route path="/help" element={<HelpSupport />} />
           </Route>
